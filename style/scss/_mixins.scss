@@ -1,0 +1,29 @@
+@mixin text ($color, $f-family, $f-size, $t-trans, $l-spac) {
+    color: $color;
+    font-family: $f-family;
+    font-size: $f-size;
+    font-weight: 400;
+    text-transform: $t-trans;
+    letter-spacing: $l-spac;
+}
+
+@mixin team {
+    max-width: 1542px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+@mixin field ($width, $height, $f-size, $f-family, $bc-col, $border, $bor-bot) {
+    margin: 25px 5px;
+    width: $width;
+    height: $height;
+    font-size: $f-size;
+    font-family: $f-family;
+    background-color: $bc-col;
+    border: $border;
+    border-bottom: $bor-bot;
+    outline: none;
+    color: $white-color
+}

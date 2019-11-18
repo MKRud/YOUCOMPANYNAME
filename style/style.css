@@ -1,0 +1,779 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Myriad Pro Light';
+  src: url("./fonts/MariadPro/MyriadPro-Light.eot");
+  src: url("./fonts/MariadPro/MyriadPro-Light.eot?#iefix") format("embedded-opentype"), url("./fonts/MariadPro/MyriadPro-Light.woff") format("woff"), url("./fonts/MariadPro/MyriadPro-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Athelas";
+  src: url("./fonts/Athelas/Athelas-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.container__titel {
+  min-height: 1024px;
+  height: 100%;
+}
+
+h1 {
+  margin: 49px auto 54px 63px;
+  opacity: 0.71;
+  color: #d7794a;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 0.63px;
+  font-family: "Myriad Pro Light";
+}
+
+.title {
+  width: 100%;
+  height: 100%;
+  min-height: 770px;
+  background: url(../../img/logo.jpg) center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.title .titel__bar {
+  width: 100%;
+  height: 78px;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.title .titel__bar nav {
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.title .titel__bar nav:first-child {
+  margin-left: 50px;
+}
+
+.title .titel__bar nav .bar__nav {
+  color: #e8e6e6;
+  font-size: 20px;
+  font-family: "Myriad Pro Light";
+  text-decoration: none;
+  height: 100%;
+  padding: 27px 20px;
+  -webkit-transition: color .3s linear;
+  transition: color .3s linear;
+}
+
+.title .titel__bar nav .bar__nav:hover {
+  color: black;
+  background-color: #00b4f0a4;
+}
+
+.title .titel__text {
+  position: absolute;
+  bottom: 115px;
+  right: 145px;
+}
+
+.title .titel__text .text__welcome {
+  color: #fcf9f7;
+  font-family: Libre Baskerville;
+  font-size: 72px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.title .titel__text .text__you {
+  color: #d7794a;
+  font-family: Athelas;
+  font-size: 48px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+.container__team {
+  width: 100%;
+  height: 1642px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container__team .team__content {
+  width: 100%;
+  height: 1179px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container__team .team__content h2 {
+  color: #a95e39;
+  font-family: Athelas;
+  font-size: 61px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  line-height: 25.46px;
+}
+
+.container__team .team__content .content__line {
+  width: 442px;
+  height: 1px;
+  background-color: #88543a;
+  margin: 40px auto 87px;
+}
+
+.container__team .team__content .content__text {
+  width: 1137px;
+  text-align: center;
+  color: black;
+  font-family: "Helvetica";
+  font-size: 31px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0.9px;
+}
+
+.container__team .team__content .team__photo {
+  margin-top: 135px;
+  max-width: 1542px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.container__team .team__content .team__photo .photo__one {
+  background: url(https://st.depositphotos.com/1000423/2642/i/950/depositphotos_26422791-stock-photo-funny-fluffy-cat-in-a.jpg);
+}
+
+.container__team .team__content .team__photo .photo__two {
+  background: url(https://woman-project.com/uploads/1334037600/a5b8d8e8f68752.jpg);
+}
+
+.container__team .team__content .team__photo .photo__three {
+  background: url(https://cs12.pikabu.ru/post_img/2019/01/19/4/154787322112285708.jpg);
+}
+
+.container__team .team__content .team__photo .photo {
+  width: 30%;
+  height: 570px;
+  background-size: cover;
+}
+
+.container__team .team__content .team__name {
+  max-width: 1542px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 55px;
+}
+
+.container__team .team__content .team__name .name {
+  color: black;
+  font-family: "Helvetica";
+  font-size: 31px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.container__team .team__content .team__text {
+  max-width: 1542px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.container__team .team__content .team__text .text_team {
+  width: 30%;
+  color: black;
+  font-family: "Helvetica";
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0.6px;
+}
+
+.bar_information {
+  margin-top: 300px;
+  text-align: center;
+  width: 100%;
+  height: 340px;
+  background: #1b2b31;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bar_information .statistics__number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.bar_information .statistics__number .numbers {
+  width: 100%;
+  color: #995437;
+  font-family: "Vani";
+  font-size: 77px;
+  font-weight: 700;
+  line-height: 38.37px;
+}
+
+.bar_information .statistics__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.bar_information .statistics__text .texts {
+  width: 100%;
+  color: #e8e6e6;
+  font-family: "Myriad Pro Light";
+  font-size: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.container__none {
+  width: 100%;
+  height: 1103px;
+  background: url(https://fakty.com.ua/wp-content/uploads/2018/06/01/photo_2018-06-01_11-40-31-2.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.container__contact-us {
+  width: 100%;
+  min-height: 1435px;
+  height: 100%;
+  background-color: #233740;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container__contact-us .contact-us__text {
+  width: 770px;
+  height: 190px;
+  margin-top: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container__contact-us .contact-us__text h3 {
+  text-align: center;
+  color: #ffffff;
+  font-family: Athelas;
+  font-size: 66px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.container__contact-us .contact-us__text .contact__text {
+  text-align: center;
+  color: #a6a9ab;
+  font-family: Quattrocento Sans;
+  font-size: 28px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0.5px;
+}
+
+.container__contact-us .input__area {
+  max-width: 1036px;
+  width: 100%;
+  height: 500px;
+  margin: 120px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+}
+
+.container__contact-us .input__area .fields_input {
+  margin: 25px 5px;
+  width: 49%;
+  height: 50px;
+  font-size: 22px;
+  font-family: Quattrocento Sans;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #bfbfbf;
+  outline: none;
+  color: #ffffff;
+}
+
+.container__contact-us .input__area .field_email {
+  margin: 25px 5px;
+  width: 100%;
+  height: 50px;
+  font-size: 22px;
+  font-family: Quattrocento Sans;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #bfbfbf;
+  outline: none;
+  color: #ffffff;
+}
+
+.container__contact-us .input__area .field_message {
+  min-height: 40px;
+  min-width: 1036px;
+  max-height: 250px;
+  margin: 25px 5px;
+  width: 100%;
+  height: 170px;
+  font-size: 22px;
+  font-family: Quattrocento Sans;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #bfbfbf;
+  outline: none;
+  color: #ffffff;
+}
+
+.container__contact-us .input__area .button {
+  width: 240px;
+  height: 73px;
+  color: white;
+  margin-left: auto;
+  margin-top: 75px;
+  background-color: #623621;
+  font-size: 24px;
+  font-family: "Myriad Pro Light";
+  font-weight: 400;
+  border: 2px solid #623621;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+  outline: none;
+}
+
+.container__contact-us .input__area .button:hover {
+  background-color: #89553b;
+}
+
+.container__about {
+  width: 100%;
+  height: 1267px;
+  background: url(../../img/Slice_1.png) center no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container__about .about_us {
+  width: 100%;
+  max-width: 1817px;
+  height: 100%;
+  max-height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container__about .about_us .about_us__image {
+  width: 906px;
+  height: 600px;
+  background: url(https://memepedia.ru/wp-content/uploads/2018/07/150412976013508192-kopiya-768x576.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.container__about .about_us .about_us__content {
+  width: 840px;
+  height: 524px;
+  background: #f9f9fb;
+  border: 2px solid #d3d4d8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container__about .about_us .about_us__content h4 {
+  margin: 73px auto 41px auto;
+  color: black;
+  font-family: Athelas;
+  font-size: 48px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+}
+
+.container__about .about_us .about_us__content .about__text {
+  width: 555px;
+  height: 50px;
+  text-align: center;
+  color: #3d3d3d;
+  font-family: Quattrocento Sans;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0.5px;
+}
+
+.container__about .about_us .about_us__content .about__circles {
+  margin-top: 65px;
+  width: 655px;
+  padding: 2px;
+  background-image: linear-gradient(88.19deg, #323648 0%, rgba(50, 54, 72, 0) 100%);
+  height: 143px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container__about .about_us .about_us__content .about__circles .circle_one {
+  background: url(https://www.meme-arsenal.com/memes/ade04f50f1027bba3b07f71ae8a54a64.jpg) center no-repeat;
+}
+
+.container__about .about_us .about_us__content .about__circles .circle_two {
+  background: url(https://medialeaks.ru/wp-content/uploads/2018/08/sub-buzz-32439-1534953281-8.png-373x500.jpeg) center no-repeat;
+}
+
+.container__about .about_us .about_us__content .about__circles .circle_three {
+  background: url(https://laika-72.ru/wp-content/uploads/2019/06/tolstyj-kot-prichiny-ozhireniya.jpg) center no-repeat;
+}
+
+.container__about .about_us .about_us__content .about__circles .circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.container__about .about_us .about_us__content .about__line {
+  width: 767px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: -5px;
+}
+
+.container__about .about_us .about_us__content .about__line .line {
+  width: 3px;
+  height: 30px;
+  background: black;
+}
+
+.container__about .about_us .about_us__content .about__frames {
+  width: 767px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container__about .about_us .about_us__content .about__frames .frame {
+  font-size: 18px;
+  text-transform: uppercase;
+  border: 3px solid black;
+  padding: 17px 36px;
+}
+
+.container__gallery {
+  width: 100%;
+  max-height: 1440px;
+  height: 100%;
+}
+
+.container__gallery .our_gallery__text {
+  text-align: center;
+  margin: 180px auto 0;
+  width: 100%;
+  max-width: 1508px;
+}
+
+.container__gallery .our_gallery__text h5 {
+  color: #a95e39;
+  font-family: Athelas;
+  font-size: 72px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+}
+
+.container__gallery .our_gallery__text .gallery__text {
+  margin-top: 100px;
+  color: black;
+  font-family: Athelas;
+  font-size: 28px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.container__gallery .gallery__photo {
+  margin-top: 160px;
+  height: 770px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container__gallery .gallery__photo .photo_slider__one {
+  background: url(https://pbs.twimg.com/profile_images/457507581028990976/i87giOhs.jpeg) center no-repeat;
+}
+
+.container__gallery .gallery__photo .photo_slider__two {
+  background: url(https://i.ytimg.com/vi/5IaqJSQIHKg/hqdefault.jpg) center no-repeat;
+}
+
+.container__gallery .gallery__photo .photo_slider__three {
+  background: url(http://darlingdove.ru/image/cache/catalog/postcards/0019-front-1000x800.jpg) center no-repeat;
+}
+
+.container__gallery .gallery__photo .photo_slider__four {
+  background: url(https://i.mycdn.me/i?r=AyH4iRPQ2q0otWIFepML2LxRHVVhOnIhgV2kzDa8iia4WA) center no-repeat;
+}
+
+.container__gallery .gallery__photo .photo_slider__five {
+  background: url(https://cdn.fishki.net/upload/post/2017/07/11/2334403/d6b571d3a17926c563cad136e1939a22.jpg) center no-repeat;
+}
+
+.container__gallery .gallery__photo .photo_slider {
+  height: 770px;
+  width: 390px;
+  background-size: cover;
+}
+
+.container__gallery .under_footer {
+  width: 100%;
+  height: 77px;
+  background: #d6d6d6;
+}
+
+.container__footer {
+  height: 385px;
+  width: 100%;
+}
+
+.container__footer .footer_one {
+  width: 100%;
+  height: 300px;
+  background-color: #233740;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container__footer .footer_one .footer__inform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container__footer .footer_one .inform {
+  margin: 50px 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  color: #e8e6e6;
+  font-family: "Myriad Pro Light";
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.container__footer .footer_one .inform__text {
+  text-decoration: none;
+  margin-top: auto;
+  color: #e8e6e6;
+  font-family: "Myriad Pro Light";
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0.6px;
+}
+
+.container__footer .footer_one .footer__contacts {
+  width: 165px;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container__footer .footer_one .footer__contacts .phone_address {
+  color: #d5d4d2;
+  font-family: "Myriad Pro Light";
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0.4px;
+  margin-bottom: 5px;
+}
+
+.container__footer .footer_one .footer__contacts .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container__footer .footer_one .footer__contacts .addres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container__footer .footer_one .footer__contacts .icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+}
+
+.container__footer .footer_two {
+  width: 100%;
+  height: 90px;
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container__footer .footer_two .footer_two__text {
+  color: #cdcbcb;
+  font-family: "Myriad Pro Light";
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.container__footer .footer_two .footer_two__links {
+  width: 200px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=style.css.map */
