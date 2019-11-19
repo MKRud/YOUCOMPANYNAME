@@ -7,12 +7,25 @@
     letter-spacing: $l-spac;
 }
 
-@mixin team {
-    max-width: 1542px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
+@mixin buttom {
+    width: 53px;
+    height: 53px;
+    background: transparent;
+    border-radius: 50%;
+    border: 2px solid #88543a;
+    font-size: 19px;
+    font-family: Font Awesome;
+    color: #985336;
+    transition: .2s linear;
+    outline:  none;
+    margin: 11px 56px;
+    &:hover{
+        background: #88543a;
+        color: #bdb3af;
+        font-size: 20px;
+    }
+
+
 }
 
 @mixin field ($width, $height, $f-size, $f-family, $bc-col, $border, $bor-bot) {

@@ -44,35 +44,39 @@
     <div class="container__team">
         <div class="team__content">
             <h2>OUR TEAM LEADERS</h2>
-            <div class="content__line"></div>
+            <hr class="content__line">
             <div class="content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
                 velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
                 in culpa qui officia deserunt mollit anim id est laborum..</div>
 
-            <div class="team__photo">
-                <div class="photo__one photo"></div>
-                <div class="photo__two photo"></div>
-                <div class="photo__three photo"></div>
-            </div>
+            <div class="container__photo">
 
-            <div class="team__name">
-                <div class="name__one name">Hugo Silva</div>
-                <div class="name__two name">Imanol Arias</div>
-                <div class="name__three name">Javier Bardem</div>
-            </div>
+                <div class="team__photo">
+                    <div class="photo__one photo"></div>
+                    <div class="team__name name_one">Hugo Silva</div>
+                    <div class="team__description description_one">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Distinctio reiciendis sit voluptatem maiores molestiae et eveniet voluptate corporis
+                        pariatur alias ducimus deserunt, temporibus possimus magnam nihil facilis architecto adipisci
+                        modi!</div>
+                </div>
 
-            <div class="team__text">
-                <div class="text__one text_team">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-                    architecto repellendus rem inventore asperiores excepturi voluptates reprehenderit ipsam,
-                    repudiandae nostrum dolore temporibus unde omnis facere quam, atque dolor alias delectus? </div>
-                <div class="text__two text_team">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-                    architecto repellendus rem inventore asperiores excepturi voluptates reprehenderit ipsam,
-                    repudiandae nostrum dolore temporibus unde omnis facere quam, atque dolor alias delectus?</div>
-                <div class="text__three text_team">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-                    architecto repellendus rem inventore asperiores excepturi voluptates reprehenderit ipsam,
-                    repudiandae nostrum dolore temporibus unde omnis facere quam, atque dolor alias delectus? </div>
+                <div class="team__photo">
+                    <div class="photo__two photo"></div>
+                    <div class="team__name name_two">Imanol Arias</div>
+                    <div class="team__description description_two">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Numquam deleniti libero, nam reprehenderit id dolorum sint laborum ad debitis, quo
+                        obcaecati dolorem facilis pariatur molestias harum magni nisi dolor. Recusandae.</div>
+                </div>
+
+                <div class="team__photo">
+                    <div class="photo__three photo"></div>
+                    <div class="team__name name_three">Javier Bardem</div>
+                    <div class="team__description description_three">Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Vel quaerat deserunt suscipit. Earum libero maxime, eveniet ipsa quod incidunt dolorem! Ex
+                        consectetur commodi quo ullam. Tempora, veritatis sapiente? Assumenda, veniam!</div>
+                </div>
             </div>
         </div>
     </div>
@@ -81,18 +85,24 @@
 
     <div class="bar_information">
 
-        <div class="statistics__number">
-            <div class="number__one numbers">2500</div>
-            <div class="number__two numbers">300</div>
-            <div class="number__three numbers">120</div>
-            <div class="number__four numbers">30</div>
+        <div class="stat_one stat">
+            <div class="number_one numbers">2500</div>
+            <div class="text_one texts">happy clients</div>
         </div>
 
-        <div class="statistics__text">
-            <div class="text__one texts">happy clients</div>
-            <div class="text__two texts">FULL NOTEBOOKS </div>
-            <div class="text__three texts">TEAMMATES</div>
-            <div class="text__four texts">stores</div>
+        <div class="stat_two stat">
+            <div class="number_two numbers">300</div>
+            <div class="text_two texts">FULL NOTEBOOKS</div>
+        </div>
+
+        <div class="stat_three stat">
+            <div class="number_three numbers">120</div>
+            <div class="text_three texts">TEAMMATES</div>
+        </div>
+
+        <div class="stat_one stat">
+            <div class="number_three numbers">30</div>
+            <div class="text_three texts">stores</div>
         </div>
     </div>
 
@@ -188,7 +198,12 @@
             <div class="photo_slider__five photo_slider"></div>
         </div>
 
-        <div class="under_footer"></div>
+        <div class="under_footer">
+            <div class="button__slik">
+                <button class="prev"><</button>
+                <button class="next">></button>
+            </div>
+        </div>
 
     </div>
 
@@ -230,7 +245,7 @@
             </div>
         </div>
         <div class="footer_two">
-            <div class="footer_two__text">Copyright © 2019 . Your companyname  All rights reserved</div>
+            <div class="footer_two__text">Copyright © 2019 . Your companyname All rights reserved</div>
             <div class="footer_two__links">
                 <a class="link_one footer__links" href="#"> <img src="/icons/Slice_5.png" alt=""></a>
                 <a class="link_two footer__links" href="#"> <img src="/icons/Slice_6.png" alt=""></a>
@@ -254,7 +269,9 @@
             slidesToShow: 1,
             centerMode: true,
             variableWidth: true,
-            arrows: false
+            // arrows: false,
+            prevArrow: $('.prev'),
+            nextArrow: $('.next'),
         });
     });
 </script>
